@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9fafb;
-  color: #334155;
+  background-color: #1a202c; /* Dark background for premium look */
+  color: #e2e8f0; /* Light text color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,9 @@ body {
 
 .container {
   padding: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: #2d3748; /* Dark gray background for the form container */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   max-width: 600px;
   width: 100%;
 }
@@ -28,11 +28,11 @@ body {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: #334155;
+  color: #ffd700; /* Gold for premium contrast */
 }
 
 .message {
@@ -42,11 +42,11 @@ body {
 }
 
 .success {
-  color: #16a34a;
+  color: #38b2ac; /* Green for success message */
 }
 
 .error {
-  color: #dc2626;
+  color: #e53e3e; /* Red for error message */
 }
 
 .form-group {
@@ -57,46 +57,56 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
+  color: #cbd5e0; /* Light gray for labels */
 }
 
 .input-field {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 5px;
   font-size: 14px;
-  background-color: #f9fafb;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  background-color: #4a5568; /* Darker background for input fields */
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  color: #e2e8f0;
 }
 
 .input-field:focus {
   outline: none;
-  border-color: #4f46e5;
+  border-color: #ffd700; /* Gold border on focus */
 }
 
 button:disabled {
-  background: #ccc;
+  background: #cbd5e0;
   cursor: not-allowed;
 }
 
 .submit-btn {
-  padding: 12px 20px;
+  padding: 14px 24px;
   font-size: 16px;
   font-weight: bold;
   text-transform: capitalize;
-  background: linear-gradient(to right, #4f46e5, #60a5fa);
+  background: linear-gradient(
+    to right,
+    #4a90e2,
+    #0056b3
+  ); /* Deep blue gradient */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 
 .submit-btn:hover {
-  background: linear-gradient(to right, #4338ca, #2563eb);
+  background: linear-gradient(
+    to right,
+    #003d73,
+    #002f5f
+  ); /* Darker blue on hover */
 }
 
 button:disabled:hover {
-  background: #ccc;
+  background: #cbd5e0;
 }

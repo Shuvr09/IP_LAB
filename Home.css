@@ -1,0 +1,155 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb; /* Light background */
+  color: #1a202c; /* Dark text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: #333; /* Dark title color */
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #dbeafe, #f0f4ff);
+  padding: 24px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 40px;
+}
+
+.appointment-btn,
+.service-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.appointment-btn {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-btn:hover {
+  background: linear-gradient(to right, #003d73, #002f5f);
+}
+
+.service-btn {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  background: transparent;
+}
+
+.service-btn:hover {
+  background: #dbeafe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2563eb;
+}
+
+.section-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-top: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f3f4f6;
+  padding: 60px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

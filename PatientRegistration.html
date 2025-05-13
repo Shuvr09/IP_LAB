@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="PatientRegistration.css" />
+  </head>
+  <body>
+    <!-- Logo Bar -->
+    <div class="logo-bar">
+      <img
+        src="/images/CUET_Vector_ogo.svg.png"
+        alt="CUET Logo"
+        class="logo"
+        onerror="this.onerror=null; this.src='https://via.placeholder.com/100x100?text=Logo';"
+      />
+      <h1 class="logo-text">CUET Medical Center</h1>
+    </div>
+
+    <div class="container">
+      <h1 class="title">Patient Registration</h1>
+
+      <!-- Patient Type Selection -->
+      <div class="form-group">
+        <label for="patient-type">Patient Type</label>
+        <select
+          id="patient-type"
+          name="patientType"
+          required
+          class="input-field"
+        >
+          <option value="inpatient">Inpatient</option>
+          <option value="outpatient">Outpatient</option>
+        </select>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="registration-form" class="form">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="first-name"
+            name="firstName"
+            placeholder="Enter your first name"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input
+            type="text"
+            id="last-name"
+            name="lastName"
+            placeholder="Enter your last name"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact Number</label>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            placeholder="Enter your contact number"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            placeholder="Confirm your password"
+            required
+            class="input-field"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" required />
+              Female</label
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+
+      <!-- Error Message -->
+      <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script>
+      document
+        .getElementById("registration-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirm-password").value;
+
+          if (password !== confirmPassword) {
+            document.getElementById("error-message").innerText =
+              "Passwords do not match!";
+            return;
+          }
+
+          alert("Registration Successful!");
+        });
+    </script>
+  </body>
+</html>

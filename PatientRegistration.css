@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8; /* Light pastel background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    #f0f4f8,
+    #e0f7fa
+  ); /* Soft gradient background */
+}
+
+/* Logo Bar */
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #64b5f6; /* Light blue background for the logo section */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slight hover effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2563eb; /* Light blue for the title */
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4a5568; /* Dark gray for labels */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #64b5f6; /* Light blue for focused input fields */
+  box-shadow: 0 0 8px rgba(100, 181, 246, 0.3);
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.gender-options label {
+  color: #4a5568;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Button Styles */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(
+    to right,
+    #4caf50,
+    #3b82f6
+  ); /* Premium green-blue gradient */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #3b82f6, #2563eb); /* Hover effect */
+}
+
+.submit-btn:active {
+  transform: scale(0.98); /* Slight click effect */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

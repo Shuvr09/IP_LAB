@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUET Medical Center</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+  <body>
+    <div class="bg-gray-50 min-h-screen font-sans">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="title">Trusted Healthcare, Right at CUET</h1>
+          <p class="subtitle">
+            Experience modern, professional, and compassionate healthcare with
+            CUET Medical Center. Your well-being is our mission.
+          </p>
+          <div class="button-container">
+            <button class="appointment-btn" onclick="handleBookAppointment()">
+              Book an Appointment
+            </button>
+            <button
+              class="service-btn"
+              onclick="window.location.href='/service'"
+            >
+              Explore Services
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <h2 class="section-title">About CUET Medical Center</h2>
+          <p class="section-description">
+            At CUET Medical Center, we provide comprehensive healthcare services
+            for the CUET community, ensuring that students, faculty, and staff
+            receive the best care possible. From expert doctors to advanced lab
+            facilities, your health is always in the best hands.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features-section">
+        <div class="container">
+          <h2 class="section-title">Why Choose Us?</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3 class="feature-title">Expert Doctors</h3>
+              <p class="feature-description">
+                Access a directory of highly qualified doctors across multiple
+                specialties, dedicated to your health.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title">Advanced Labs</h3>
+              <p class="feature-description">
+                Get quick and reliable test results from our state-of-the-art
+                laboratory facilities.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-title">24/7 Emergency Care</h3>
+              <p class="feature-description">
+                We’re here for you any time of the day with round-the-clock
+                emergency services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function handleBookAppointment() {
+        const isLoggedIn = true; // Example logged-in state
+        const userType = "patient"; // Example user type (could be fetched from context)
+
+        if (isLoggedIn && userType === "patient") {
+          window.location.href = "/appointment"; // Redirect to the Appointment page for logged-in patients
+        } else {
+          window.location.href = "/login"; // Redirect to the Login page if not logged in
+        }
+      }
+    </script>
+  </body>
+</html>
