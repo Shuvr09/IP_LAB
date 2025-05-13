@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #334155;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+}
+
+.appointment-form {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #334155;
+}
+
+.message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.error {
+  color: #dc2626;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #4f46e5, #60a5fa);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #4338ca, #2563eb);
+}
+
+button:disabled:hover {
+  background: #ccc;
+}

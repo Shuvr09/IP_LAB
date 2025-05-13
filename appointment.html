@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="appointment-form">
+        <h1 class="title">Book an Appointment</h1>
+
+        <div id="success-message" class="message success"></div>
+        <div id="error-message" class="message error"></div>
+
+        <form id="appointment-form">
+          <div class="form-group">
+            <label for="date">Preferred Appointment Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="time">Preferred Appointment Time</label>
+            <input
+              type="time"
+              id="time"
+              name="time"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="doctor">Select Doctor</label>
+            <select id="doctor" name="doctorID" class="input-field" required>
+              <!-- Options will be added dynamically -->
+            </select>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" id="submit-btn" class="submit-btn" disabled>
+              Book Appointment
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
